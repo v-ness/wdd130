@@ -6,6 +6,10 @@ nav {
     background-color: steelblue;
     padding: 10px;
 }
+#active {
+  background-color: white;
+  color: steelblue;
+}
   
 a {
     color: white;
@@ -19,8 +23,9 @@ a {
     width: 800px;
     border: 4px solid steelblue;
   }
-  p {
-    padding: 10px;
+  .main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
   footer {
     background-color: steelblue;
