@@ -1,0 +1,60 @@
+body {
+    background-color: pink
+}
+
+h1 {
+    font-size: 3.0em;
+    text-align: center;
+    color: white;
+}
+
+h1:hover{
+    color: black
+}
+
+h2 {
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-size: 0.7em;
+    color: white
+
+}
+
+.nelson {
+    font-size: 1em;
+}
+
+ol {
+    width: 45%;
+    display: block;
+    margin: 20px auto;
+    font-size: 1em
+    
+
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 20px auto;
+    
+}
+
+main p {
+    width: 35%;
+    margin: 20px auto;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    font-size: 0.7em
+    
+}
