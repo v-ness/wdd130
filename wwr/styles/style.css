@@ -64,7 +64,7 @@ main section{
 }
 
 main section img {
-    box-sizing: boder-box;
+    box-sizing: border-box;
 }
 
 #background{
@@ -113,17 +113,18 @@ main section img{
     border: 10px solid #4DA167
 }
 
+h2{
+    color: #4E6E5D;
+    font-family: "New Tegomin", sans-serif, Helvetica;
+    margin: 0;
+}
+
 .msg{
     background-color: #4E6E5D;
     line-height:1.5em;
     padding: 35px;
 }
 
-h2{
-    color: #4E6E5D;
-    font-family: "New Tegomin", sans-serif, Helvetica;
-    margin: 0;
-}
 
 .msg h2{
     color: white;
