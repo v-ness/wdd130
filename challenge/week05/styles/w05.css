@@ -1,0 +1,9 @@
+body{
+    background-color: grey;
+}
+
+main .icons{
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
