@@ -1,0 +1,32 @@
+div{
+    height: 20vh;
+}
+
+body{
+    background-color: white;
+}
+
+img{
+    margin:200px; 
+    border-radius: 10px;
+}
+
+h1{
+    margin: 30px;
+    font-size: 20px;
+    color: rgb(82, 82, 187)
+}
+
+h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+p{
+    max-width: 600px;
+    text-align: center;
+    margin: 100px;
+}
+
+
+

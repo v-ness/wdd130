@@ -187,11 +187,72 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color: #FEC000
+    color: #3BC14A
 }
 footer .social img{
     padding-top: 15px;
 }
+
+/*CSS for Sub Page Rivers*/
+.rivers-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+.idaho-row{
+    grid-column: 1/4;
+    
+}
+
+.utah-row{
+    grid-column:5/7;
+}
+
+.arizona-row{
+    grid-column:8/10;
+}
+
+.img-box{
+    margin: 20px;
+    width: 500px;
+    height: 400px;
+    border: 10px solid #4DA167;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px grey
+}
+
+h2{
+    border: 50px;
+    padding: 50px
+}
+.text-box{
+    grid-column: 2/4;
+}
+.text{
+        justify-content: center;
+}
+
+.img-box-right{
+    grid-column: 3/4;
+}
+
+.text-box-right, .text-right{
+    grid-column: 1/3;
+} 
+
+.text{
+    color:white;
+    margin: 20px;
+    padding: 30px;
+    font-size: 1em;
+}
+
+.text-box{
+    margin: 20px;
+    background-color: #4D5057;
+}
+
+
 
 /*This could be read as follows: "If the max width of the screen gets smaller than 900px, then use this CSS instead of what you may have seen above" for these selectors.*/
 @media screen and (max-width: 900px) { 
