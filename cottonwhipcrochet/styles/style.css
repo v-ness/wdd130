@@ -225,3 +225,33 @@ footer .social img:hover{
     opacity: .8;
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 900px) {
+    header, nav, main, #hero .home-grid .about-grid #action footer{
+        display: block;
+        height: auto;
+    }
+    .logo{
+        display: block;
+        padding-left: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #her-msg{
+        font-size: 60px;
+    }
+    .home-grid img{
+        width: 70%;
+        display: block;
+        margin: 20px auto;
+    }
+
+}
