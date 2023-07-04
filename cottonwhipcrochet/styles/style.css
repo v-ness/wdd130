@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Nunito&display=swap');
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
 .logo{
     width: 200px;
     padding-left: 100px;
@@ -45,9 +49,16 @@ nav a:hover{
 #hero-msg{
     grid-column: 2;
     font-family: DynaPuff;
-    font-size: 80px;;
+    font-size: 80px;
     color: #9957BC;
     text-align: center;
+}
+.description{
+    font-family: Nunito, sans-serif, Arial, Helvetica;
+    font-size: 50px;
+    color:#4A3456;
+    text-align: center;
+    padding-bottom: 80px;
 }
 body{
     background-color: #FFFAFA;
@@ -136,6 +147,30 @@ body{
 }
 #action:hover{
     transform: scale(1.1);
+}
+.about-grid img{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.first-image{
+    width: 50%;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+.about-me-text{
+    grid-row: 2/4;
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+}
+.last-image{
+    width: 30%;
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
 }
 footer{
     background-color: #592653;
