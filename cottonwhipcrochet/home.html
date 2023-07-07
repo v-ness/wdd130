@@ -20,11 +20,46 @@
       <a class= "free-patterns" href="free-patterns.html">Free Patterns</a>
     </nav>
   </header>
-  
-  <div id="hero">
-    <div id="hero-box">
-      <img id="hero-img" src="images/hero.jpg" alt="Picture of two versions of Molly">
+    
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/hero_molly.jpg" style="width:100%" alt="Molly Crochet Pattern">
     </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/hero_fe.JPG" style="width:100%" alt="Lysithea FE Crochet Pattern">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/hero_loonette.JPG" style="width:100%" alt="Loonette Crochet Pattern">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/hero_ram.jpg" style="width:100%" alt="Little Ram Crochet Pattern">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  
+  <div>
     <section id="hero-msg">
       <h1 class="home-title">My Patterns</h1>
       <div class="description"> Welcome to my website! Here you will find a collection of my most popular patterns as well as a collection of free patterns.</div>
@@ -32,35 +67,35 @@
   </div>
 
   <main class="home-grid">
-    <section class="mirabel">
+    <div class="mirabel">
       <img src="images/mirabel.png" alt="Mirabel Pattern">
-    </section>
-    <section class="isabela">
+    </div>
+    <div class="isabela">
       <img src="images/isabela.png" alt="Isabela Pattern">
-    </section>
-    <section class="luisa">
+    </div>
+    <div class="luisa">
       <img src="images/luisa.png" alt="Luisa Pattern">
-    </section>
-    <section class="loonette">
+    </div>
+    <div class="loonette">
       <img src="images/loonette.png" alt="Loonette Pattern">
-    </section>
-    <section class="molly">
+    </div>
+    <div class="molly">
       <img src="images/molly.png" alt="Molly Pattern">
-    </section>
-    <section class="fe3h">
+    </div>
+    <div class="fe3h">
       <img src="images/fire_emblem.png" alt="Fire Emblem Patterns">
-    </section>
-    <section class="pumpkin">
+    </div>
+    <div class="pumpkin">
       <img src="images/bear.png" alt="Pumpkin Bear Pattern">
-    </section>
-    <section class="ram">
+    </div>
+    <div class="ram">
       <img src="images/ram.png" alt="Ram Free Pattern">
-    </section>
+    </div>
   </main>
 
-  <diV id="action">
+  <div id="action">
     <p><a class="link" href="https://www.etsy.com/ca/shop/CottonWhipCrochet">Find my patterns on etsy</a></p>
-  </diV>
+  </div>
 
   
   <footer>
@@ -74,5 +109,22 @@
     </div>
   </footer>
   </div>
-  </body>
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+
+</body>
 </html>
