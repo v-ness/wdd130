@@ -403,7 +403,7 @@ footer .social img:hover{
     }
     .logo{
         display: block;
-        padding-left: auto;
+        padding-left: 20px;
     }
     nav, footer {
         flex-direction: column;
